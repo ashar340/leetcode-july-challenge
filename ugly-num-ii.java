@@ -1,5 +1,3 @@
-import java.util.PriorityQueue;
-
 /* 
 Ugly Number II
 Write a program to find the n-th ugly number.

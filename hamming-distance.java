@@ -22,7 +22,17 @@ The above arrows point to positions where the corresponding bits are different.
  */
 
 class Solution {
-    public int hammingDistance(int x, int y) {
+    public int hammingDistance_lib(int x, int y) {
         return Integer.bitCount(x ^ y);
+    }
+
+    public int hammingDistance_bitCount(int x, int y) {
+        int sum = 0;
+        for(int i = 0; i < 32; i++)
+        {
+            if ( (x & 1) != (y & 1) )
+                sum ++;
+            x = x >>1
+        }
     }
 }
